@@ -1,39 +1,45 @@
-# Salary Prediction using Ensemble Learning
+# 💼 Salary Prediction using Ensemble Learning
 
-This is an IBM Project Based Learning (PBL) project to build a **Salary Prediction** model using **Ensemble Learning** (Random Forest).  
-The app predicts salary based on Age, Gender, Education Level, Job Title, and Years of Experience.
-
----
-
-## Project Overview
-
-The goal is to create a reliable ML model that accurately predicts salary using key features.  
-A Streamlit web app provides an interactive UI to input details and get salary predictions in real-time.
+Welcome to the **Salary Prediction** project — an IBM PBL initiative that leverages **Ensemble Learning** (Random Forest) to predict salaries based on your profile!
 
 ---
 
-## Dataset
+## 🚀 Project Overview
 
-- Contains: `Age`, `Gender`, `Education Level`, `Job Title`, `Years of Experience`, `Salary`  
-- Data is loaded directly from a Google Drive link within the app code. No manual download needed.
+This project aims to build a robust machine learning model that predicts expected salary using important features like:
 
----
+- Age  
+- Gender  
+- Education Level  
+- Job Title  
+- Years of Experience  
 
-## Features
-
-- Handles categorical data with OneHotEncoding  
-- Uses Random Forest Regressor (Ensemble Learning) for better accuracy  
-- Interactive Streamlit app with dropdowns and input fields  
-- Instant salary prediction and display
+The app is built with **Streamlit**, providing a simple and interactive UI for instant predictions.
 
 ---
 
-## Requirements
+## 📊 Dataset
+
+- Features: `Age`, `Gender`, `Education Level`, `Job Title`, `Years of Experience`, `Salary`  
+- The dataset is loaded directly from a **Google Drive link** within the app (no manual download needed).
+
+---
+
+## ⚙️ Features
+
+- Handles categorical variables using **OneHotEncoding**  
+- Uses **Random Forest Regressor** (Ensemble Learning) for accurate predictions  
+- Interactive **dropdowns** and **input fields** in the web app  
+- Instant display of predicted salary  
+
+---
+
+## 🛠️ Requirements
 
 - Python 3.7+  
-- Dependencies in `requirements.txt` (streamlit, scikit-learn, pandas, numpy)
+- Required packages are listed in `requirements.txt`
 
-Install packages with:
+To install dependencies, run:
 
 ```bash
 pip install -r requirements.txt
