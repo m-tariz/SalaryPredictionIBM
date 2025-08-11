@@ -32,16 +32,20 @@ def load_and_train():
     ])
 
     model.fit(X, y)
-    return model
+    return model, df
 
-model = load_and_train()
+model, df = load_and_train()
 
 st.title("Salary Prediction Web App")
 
 age = st.number_input("Enter Age", min_value=18, max_value=100, value=30)
 gender = st.selectbox("Select Gender", options=["Male", "Female", "Other"])
 education = st.selectbox("Select Education Level", options=["Bachelors", "Masters", "PhD", "Other"])
-job_title = st.text_input("Enter Job Title", value="Data Scientist")
+
+# Get unique job titles from dataset for dropdown
+job_titles = df['Job Title'].unique().tolist()
+job_title = st.selectbox("Select Job Title", options=job_titles)
+
 years_exp = st.number_input("Years of Experience", min_value=0.0, max_value=50.0, value=5.0)
 
 if st.button("Predict Salary"):
